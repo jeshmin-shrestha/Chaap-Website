@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../style.css">
+    <body class="body">
+        
+            <!---creating a wrapper-->
+            
+                <!--creating a header-->
+             <header>
+                <!--creating logo and linking it to the homepage-->
+                <a href="homepage.html"><img src="images/logo (2).png" width="100px" style="margin:  10px; padding: 0px;" alt="logo"></a>
+                <!--creating the navigation bar-->
+                <nav class="navigation">
+                    <a href="homepage.html">Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Research</a>
+                    <a href="#">About Us</a>
+        
+                    <a href="login.html"><img src="images/carticon.png" width="30px" height="30px" ></a>
+        
+                    <!--creating the login to link to login page-->
+                   
+                    <button class="login"><a href="login.html">Login</a></button>
+        
+                </nav>
+              </header>
+        
+           <a href="homepage.html"> 
+        <img src="images/w__1_-removebg-preview.png" style="width: 80px; height: 80px; float: left; padding: 10px;margin: 10px;" ></a></div>
+      
+        <div class="signup">
+            <form name="signupForm" onsubmit="vForm()">
+            <p style="color: #6c593d;">First Name:<br><input type="text" name="fname" placeholder="First Name" style="border-radius: 12px;width: 190px; border: none;"></p><br>
+            <p style="color: #6c593d;">Last Name:<br><input type="text" name="lname" placeholder="Last Name" style="border-radius: 12px;width: 190px; border: none;"></p><br>
+            <p style="color: #6c593d;">E-mail:<br><input type="email" name="email" placeholder="  abc@gmail.com" style="border-radius: 12px;width: 190px;height: 40px; border: none;"></p><br>
+              
+             
+              <p style="color: #6c593d;"> Gender:<br><input type="radio" name="gender" value="male" >Male<br>
+                <input type="radio" name="gender" value="female" >Female</p><br>
+                <p> <input type="submit" value="Sign In" style="width: 70px; height: 40px; background-color: #6c593d; border-radius: 12px; margin: 10px;padding: 10px; color: aliceblue;border: #dacbb5;"></p>
+                </div>
+              </form>
+          <script >
+          function vForm()
+      {
+        var fname=document.forms["signupForm"]["firstname"].value;
+        var lname=document.forms["signupForm"]["lastname"].value;
+        var email=document.forms["signupForm"]["email"].value;
+        var gender=document.forms["signupForm"]["gender"].value;
+        if(fname==""|| lname==""||gender==""||email=="")
+        {
+          alert("Empty fields found.Please fill the form.");
+        }
+        else{
+         alert("Thank you for signing up.");
+        }
+      }
+      </script>
+     
+      
+            
+        
+          </div>
+              
+             
+            
+        
+                
+            
+            
+
+            
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="../style.css">
+    <style type="text/css">
+        .contaner{
+     background-color: black;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+        
+        .sign
+        {
+            width: 200px;
+            height: 200px;
+
+        }
+        .hide
+        {
+            display: none;
+        }
+        .p{
+            border-radius: 12px;width: 190px; border: none;
+        }
+        .submit{
+            width: 70px; height: 40px; background-color: #6c593d; border-radius: 12px; margin: 10px;padding: 10px; color: aliceblue;border: #dacbb5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="sign hide" id="1">
+        <form name="signupForm" onsubmit="signupForm()">
+        <p style="color: #6c593d;">First Name:<br><input type="text" name="fname" placeholder="First Name"></p><br>
+        <p style="color: #6c593d;">Last Name:<br><input type="text" name="lname" placeholder="Last Name" ></p><br>
+        <p style="color: #6c593d;">E-mail:<br><input type="email" name="email" placeholder="  abc@gmail.com" ></p><br>
+        <p style="color: #6c593d;"> Gender:<br><input type="radio" name="gender" value="male" >Male<br>
+        <input type="radio" name="gender" value="female" >Female</p><br>
+        <p> <input type="submit" value="Sign Up" class="submit"></p>
+        
+    <br>
+    <button onclick="toggle()">Already have an account?</button>
+  </form>
+    </div>
+  </div>
+  <div class="container">
+
+ 
+    <div class="sign hide" id="2">
+        <form name="signinForm" onsubmit="signinForm()">
+            <p >Username:<br><input type="text" name="username" placeholder="username"></p><br>
+           <p>password:<input type="password" name="password" placeholder="password"></p><br>
+            <p> <input type="submit" value="Sign In" class="submit"></p>
+
+    </div> 
+</div>
+</body>
+<script>
+    function toggle(){
+        var p1=document.getElementById('1');
+        var p2=document.getElementById('2');
+        if(p1.style.display=="none")
+        {
+            p1.style.display="block"; 
+            p2.style.display="none"; 
+        
+        }
+        else{
+            p1.style.display="none";
+            p2.style.display="block";
+        }
+    }
+    document.getElementById('1').style.display="block";
+ 
+</script>
+</html>

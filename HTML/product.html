@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap_products</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .printers .img-content{
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+        transition: transform o.2s;
+    }
+    .printers .img-content:hover{
+        transform: scale(1.1);
+    }
+    .popup-container{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .popup-image{
+        max-width: 80%;
+        max-height: 80%;
+        margin: auto;
+        display: block;
+        margin-top: 50px;
+    }
+    header {
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 89px;
+    width: 98%;
+    margin: 10px;
+    padding: 1px ;
+    background:#dacbb5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+   
+  }
+  
+  
+  .navigation a {
+  position: relative;
+  font-size: 1em;
+  color: black;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  
+  }
+  .navigation a:after {
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom:-6px;
+    width: 100%;
+    height: 3px;
+    background:#6c593d; 
+    border-radius: 5px;
+    transform: scaleX(0);
+    
+  }
+  .navigation a:hover::after{
+    transform: scaleX(1);
+  }
+  .login{
+    width: 200px;
+    height: 60px;
+    align-items: center;
+    background: transparent;
+    padding: 10px;
+    border: px solid #e9e9e5;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1em;
+    color:#6c593d;
+    margin-left: 20px;
+   
+  }
+  .login:hover{
+    background: #dbd
+  } 
+  .banner{
+    text-align: center;
+    background: url(../images/theme2.jpg);
+    color: purple;
+    padding-top: 100px;
+    height: 300px;
+}
+   .banner h1{
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+   .banner h2{
+    font-size: 27px;
+    text-align: center;
+} 
+#add-to-cart-btn{
+    background-color: #009688;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#add-to-cart-btn:hover {
+    background-color: #00796b;
+}
+body{
+    display: flexbox;
+    background-color: snow;
+  
+}
+.printer-container .printers{
+    margin: 5px;
+}
+.printers{
+    display: inline-flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-content: space-between;
+    margin-left: 10px;
+    width: 20%;
+    min-width: 300px;
+    padding: 20px 25px ;
+    border: 1px solid beige;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s;
+     /* position: relative; */
+}
+
+.printers:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.30);
+}
+.printers .img-content{
+    height: 150%;
+    width: 100%;
+    border-radius: 10px;
+}
+.printers .des h2{
+    padding-top: 3px;
+    background-color: #e8e2bd;
+    color: black;
+    font-family: serif;
+    font-size: 35px;
+}
+.printers .des span{
+    color: black;
+    font-size: 30px;
+}
+.printers p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+    color: #c4a580;
+    padding-top: 10px;
+    text-align: left;
+}
+.printer-container .deals{
+    background: url(../images/43144bf2218a9901fff88f6adeeaa5ce.jpg);
+    height: 300px;
+    width: 100%;
+}
+.deals h1{
+    text-align: right;
+    padding-right: 65%;
+    color: purple;
+    font-size: 2.5em;
+    padding-top: 40px;
+    font-family: serif ;
+}
+.deals p{
+    text-align: right;
+    padding-right: 60%;
+    color: purple;
+    font-size: large;
+} 
+.footer
+{
+width:100%;
+padding: 1em;
+background-color:#dacbb5;
+font-family: se;
+align-items: center;
+color: black;
+
+}
+
+  
+  
+    </style>
+    <header>
+    <!--creating logo and linking it to the homepage-->
+   <a href="homepage.html"><img src="../images/logo__2_-removebg-preview (1).png" width="120px" style="margin-left:  6px; padding: 0px; border-radius: 24px; height: 85px;" alt="logo"></a>
+    <!--creating the navigation bar-->
+    <nav class="navigation">
+        <a href="../HTML/homepage.html">Home</a>
+        <a href="../HTML/product.html">Products</a>
+        <a href="../HTML/blog1.html">Blog</a>
+        <a href="../HTML/research.html">Research</a>
+        <a href="../HTML/aboutus.html">About Us</a>
+
+        <a href="../HTML/login.html"><img src="../images/cart icon.png" width="30px" height="30px" ></a>
+
+        <!--creating the login to link to login page-->
+       
+        <button class="login"><a href="../HTML/blog1.html">Login</a></button>
+    </nav>
+   </header>
+   
+
+</head>
+<body>
+   
+    <nav>
+        <div class="banner">
+        <h1>Hot Deals This Week</h1>
+        <h1>Printers at sale</h1>
+        <h2>Upto 10% off</h2>
+    </div>
+    </nav>
+    <section class="printer-container">
+        <div id="popup-container" class="popup-container">
+            <span class="close-btn" onclick="closePopup">&times;</span>
+            <img id="popup-image" class="popup-image">
+        </div>
+    <div class="printers">
+        <div class="des">
+            <h2>Color Laser printer HL-3150CDN</h2>
+            <span>Quality printing, 2-sided printing</span>
+        </div>
+     <img class="img-content" src="../images/printer1.1.jpg">
+     <p>Price:13,000</p>
+     <div class="star">
+        <img src="../images/fivestar.jpg" width="80px" height="40px">
+     </div>
+     <button id="add-to-cart-btn">Add to Cart</button>
+     </div>
+    </div>
+    <div class="printers">
+        <div class="des">
+            <h2>EPson Inkjet printer</h2>
+            <span>High-Quality printing, Versatility</span>
+        </div>
+        <img class="img-content" src="../images/printer1.2.jpg">
+        <p>Price: 16,999</p>
+        <div class="star">
+            <img src="../images/fivestar.jpg" width="80px" height="40px">
+         </div>
+         <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="printers">
+        <div class="des">
+            <h2> M100 Canon Printer</h2>
+            <span>High-Quality printing, Easy to use</span>
+        </div>
+        <img class="img-content" src="../images/printer1.3.jpg">
+        <p>Price: 17,999</p>
+        <div class="star">
+            <img src="../images/fivestar.jpg" width="80px" height="40px">
+         </div>
+         <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="printers">
+        <div class="des">
+            <h2>Canon LBP 2900 Laser printer</h2>
+            <span>High-Quality printing, Cost-Effective</span> 
+        </div>
+        <img class="img-content" src="../images/printer1.4.jpg">
+        <p>Price:13,000</p>
+        <div class="star">
+            <img src="../images/fivestar.jpg" width="80px" height="40px">
+         </div>
+         <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="printers">
+        <div class="des">
+            <h2>HP Design Jet T-83 Large printer</h2>
+            <span>High-Quality Graphics and Images</span>
+        </div>
+        <img class="img-content" src="../images/printer1.5.jpg">
+        <p>Price: 45,000</p>
+        <div class="star">
+            <img src="../images/fivestar.jpg" width="80px" height="40px">
+         </div>
+         <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="printers">
+        <div class="des">
+            <h2>Brother L2540DW Monochrome Laser printer</h2>
+            <span>High-Quality printing, Print, Scan, Cost-Effective, Convenience </span>
+        </div>
+        <img class="img-content" src="../images/printer1.7.jpg">
+        <p>Price: 38,000</p>
+        <div class="star">
+            <img src="../images/fivestar.jpg" width="80px" height="40px">
+         </div>
+         <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="printers">
+        <div class="des">
+            <h2>Canon LBP6030W Wireless Laser printer</h2>
+            <span>High-Quality printing</span>
+        </div>
+        <img class="img-content" src="../images/printer1.8.jpg">
+        <p>Price: 20,000</p>
+        <div class="star">
+            <img src="../images/fivestar.jpg" width="80px" height="40px">
+         </div>
+         <br>
+         <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="printers">
+        <div class="des">
+            <h2>Color Laser jet pro MFP M280nw</h2>
+            <span>High-Quality printing</span>
+        </div>
+        <img class="img-content" src="../images/printer1.9.jpg">
+        <p>Price: 1,50,000</p>
+        <div class="star">
+            <img src="../images/fivestar.jpg" width="80px" height="40px">
+         </div>
+         <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    </section>
+    
+    
+  <!--creating footer-->
+  <footer class="footer" >
+    <div style="background-color: #dacbb5;width:100%;height: 500px;">
+      <h2 style="font-family: serif;margin-left: 1em; padding: 1em; text-align: center;">Contact Us</h2>
+      <!--finish contact us-->
+      <!--body of contact us-->
+      <!--left align address and email-->
+      <div style="background-color:#dacbb5;width:35%;height: 200px;margin: 10px 0px ;float: left;">
+      <h3 class="quickaddp"> Address</h3><br>
+      <p class="quickaddp">Kamal Marg, Kathmandu 44600 </p><br><br>
+      <h3 class="quickaddp"> Email</h3><br>
+      <p class="quickaddp">info@islingtoncollege.edu.np</p>
+
+      
+    </div>
+    <!--phone -->
+    <div style="background-color :#dacbb5;width:35%;height: 200px;margin: 0px 0px ;padding-left: 0px; float: left;">
+      <h3 class="quickaddp">Phone</h3><br>
+      <p class="quickaddp">01-5970012</p><br><br>
+      <h3 class="quickaddp">Follow Us</h3>
+      <!--creatig a table to divide each logos -->
+      <table style="float:left;margin-top:8px; padding-left:0px; text-align: right;" >
+        <tr>
+        <th>
+         <a href="https://www.instagram.com/islingtoncollege/">
+              <img src="../images/instagram1.png" alt="instagram" width="50px" height="50px" style="padding: 10px;"  class="iconss">
+            </a>
+          
+        </th>
+
+        <th>
+        
+          <a href="https://www.facebook.com/IslingtonCollege" >
+            <img src="../images/facebook1.png" alt="facebook" width="50px" height="50px" style="padding: 10px; border-radius: 100%;"  class="iconss">
+          </a>
+        </th>
+
+        <th>
+        
+          <a href="https://www.youtube.com/user/islingtonnepal" >
+            <img src="../images/youtube1.png" alt="youtube" width="50px" height="50px" style="padding: 10px;border-radius: 100%;"  class="iconss">
+        </th>
+        <th>
+        
+          <a href="info@islington.edu.np " >
+            <img src="../images/mail1.png" alt="mail" width="50px" height="50px" style="padding: 10px; border-radius: 100%;"  class="iconss">
+        </th>
+      </tr>
+
+    </table>
+    </div>
+    <!--creating div for the feedback section-->
+    <div style="background-color:#dacbb5;width:30%;height: 200px;margin: 0px 0px ;float: right;text-align: left;">
+      <h3 style="text-align: left; margin-left: 1em;padding-left: 1em;font-family: serif;color: #6c593d;" >Feedback</h3>
+      <!--creating form and calling the function on clicking-->
+      <form name="myForm"  onsubmit="validateForm()" >
+        <!--inserting the details of the form and applying inline css style-->
+        Username:<br><input type="text" name="username"placeholder="Username" style="width: 150px;height: 30px;border-radius: 20px;"><br>
+        <!--including  text area to  write feedback-->
+        Message:<br> <textarea name="message" rows="5" cols="22" placeholder="   Message" style="width: 160px;height: 70px;border-radius: 20px;"></textarea><br>
+        <!--creating a submmit button on clicking when calls or invokes the "validateform()" function-->
+        <input type="submit" value="Submit" style="width: 60px;height:30px;background-color: #c4a580;color: white; border-radius: 20px;">
+
+        </form>
+      
+      
+      
+    </div>
+
+    </div>
+      
+      
+      
+      
+     
+
+    
+     
+      
+      <h3>
+       &copy; 2024  छाप / Terms of Sale /Privacy Policy
+     </h3>
+    
+     <script src="../script.js"></script>
+ </footer>
+
+    <script>
+        function change(){
+            var image
+        }
+    </script>
+    <script>
+        document.querySelectorAll('#add-to-cart-btn').forEach(button => {
+  button.addEventListener('click', function () {
+      const productId = this.getAttribute('data-product-id');
+      alert(`Product added to cart!`);
+  });
+});
+</script>
+<script>
+    function openPopup(imageSrc){
+            const popupContainer = document.getElementById("popup-container");
+            const popupImage = document.getElementById("popup-image");
+
+            popupImage.src = imageSrc;
+            popupContainer.style.display = "block";
+
+            function closepopup(){
+                const popupContainer = document.getElementById("popup-container");
+                popupContainer.style.display = "none";
+            }
+        }
+</script>
+</body>
+</html>

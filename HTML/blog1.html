@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+</head>
+<style>
+    p{
+        color: black;
+        font-size: 20px;
+    }
+    body{
+        background: url(img/body.jpg);
+    }
+    h3{
+        color: black;
+    }
+    h1{
+        color: red;
+    }
+    header {
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 89px;
+    width: 98%;
+    margin: 10px;
+    padding: 1px ;
+    background:#dacbb5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+   
+  }
+  
+  
+  .navigation a {
+  position: relative;
+  font-size: 1em;
+  color: black;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  
+  }
+  .navigation a:after {
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom:-6px;
+    width: 100%;
+    height: 3px;
+    background:#6c593d; 
+    border-radius: 5px;
+    transform: scaleX(0);
+    
+  }
+  .navigation a:hover::after{
+    transform: scaleX(1);
+  }
+  .login{
+    width: 120px;
+    height: 60px;
+    align-items: center;
+    background: transparent;
+    padding: 10px;
+    border: px solid #e9e9e5;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1em;
+    color:#6c593d;
+    margin-left: 20px;
+   
+  }
+  .login:hover{
+    background: #dbd
+  }
+
+ .background{
+    width: 60%;
+
+ }
+.heading{
+    font-size: 70px;
+    color: white;
+    font: bolder;
+    left: 65%;
+    top: 80%;
+    position: absolute;
+}
+.date{
+    color: red;
+}
+.footer
+{
+width:100%;
+padding: 1em;
+background-color:#dacbb5;
+font-family: se;
+align-items: center;
+color: black;
+
+}
+.blog-1{
+    padding-left: 300px;
+}
+.blog-2{
+    padding-left: 300px ;
+}
+.blog-3{
+    padding-left: 300px;
+}
+.center{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    padding-left: 1em;
+
+}.paragraphs{
+    padding-left: 200px;
+
+}
+</style>
+
+<body>
+    <header>
+        <!--creating logo and linking it to the homepage-->
+       <a href="../HTML/homepage.html"><img src="../images/logo (1).png" width="120px" style="margin-left:  6px; padding: 0px; border-radius: 24px; height: 85px;" alt="logo"></a>
+        <!--creating the navigation bar-->
+        <nav class="navigation">
+            <a href="../HTML/homepage.html">Home</a>
+            <a href="../HTML/product.html">Products</a>
+            <a href="../HTML/blog1.html">Blog</a>
+            <a href="../HTML/research.html">Research</a>
+            <a href="../HTML/aboutus.html">About Us</a>
+            <a href="../HTML/login.html"><img src="../images/cart icon.png" width="30px" height="30px" ></a>
+
+            <!--creating the login to link to login page-->
+           
+            <button class="login"><a href="../HTML/login.html">Login</a></button>
+
+        </nav>
+      </header>
+
+
+
+    <!--This devision is for header text-->
+        <div class="first-blog">
+            <div style="font-family: baskerville; font-size: 28px; top: 15%; left: 63%; position: absolute;">
+                <h1 class="center"> Choosing the perfect printer: <br>A step by step buyer's guide</h1>
+            </div>
+        </div> <br></br>
+
+        <!--this division is for image-->
+    <div class="first-img" style="width: 70%; height: 400px;">
+        <img src="../images/c.jpg" style="width: 80%; height: 600px; display: block; margin-left: auto; 
+        margin-right: auto;"><br><br>
+
+        <!--This division is for blog paragraph text--->
+    <div class="paragraphs">
+        <h2>Essential Tips while choosing a Printer</h2><br>
+        <h3>Budget</h3>
+        <p>Budget isn't just about the initial cost of purchasing the printer. You need to consider the ongoing cost of the consumables.Determine how much use the printer will have. This way, you'll be able to estimate how often you will need to buy ink.Once you have your budget, you can begin to look at printers in your price range for the features you need.</p>
+
+        <h3>Printing Quality</h3>
+        <p>If you're going to print pictures or detailed documents, dot per inch (dpi) is a feature you need to pay attention to.
+
+            The dpi is the number of dots a printer can fit into a square inch on a piece of paper. This is often referred to as resolution. The higher the resolution, the better quality a detailed image will be.
+            
+            Engine speed will affect the quality of your printer also. Often manufacturers will state a certain speed of printing. This is how many pages per minute the printer can produce.<br><br>
+            
+            Pay attention to this number if you plan on printing large quantities of paper. Take note when you look at the speed, often it will be stated for the "draft mode."
+            
+            
+            The lower setting will affect your output on detailed graphics printing. Speed isn't always necessary. Decide whether print quality or speed is more important to you.</p>
+
+            <h3>Determining the desired print quality (color or black and white)</h3>
+            <p>The choice between color and black-and-white printing depends on your intended use.</p>
+            <img src="../images/k.png" style="width:50%; height: 500px;">
+            <p>A color printer is ideal if you frequently print documents that require vibrant colors or want to produce professional marketing materials.<br><br>However, a monochrome printer might be more cost-effective if most of your printing consists of text-based documents or black-and-white images.</p>
+
+            <h3>Read Reviews and Compare Brands</h3>
+            <p>To gain insight into the performance and reliability of different printer models, read reviews from reputable sources and compare various brands. Pay attention to customer feedback regarding print quality, reliability, ease of use, and customer support. By considering the experiences of others, you can make a more informed decision and avoid potential pitfalls.</p>
+        
+    </div>
+    <!--creating footer-->
+    <footer class="footer" >
+        <div style="background-color: #dacbb5;width:100%;height: 500px;">
+          <h2 style="font-family: serif;margin-left: 1em; padding: 1em; text-align: center;">Contact Us</h2>
+          <!--finish contact us-->
+          <!--body of contact us-->
+          <!--left align address and email-->
+          <div style="background-color:#dacbb5;width:35%;height: 200px;margin: 10px 0px ;float: left;">
+          <h3 class="quickaddp"> Address</h3><br>
+          <p class="quickaddp">Kamal Marg, Kathmandu 44600 </p><br><br>
+          <h3 class="quickaddp"> Email</h3><br>
+          <p class="quickaddp">info@islingtoncollege.edu.np</p>
+    
+          
+        </div>
+        <!--phone -->
+        <div style="background-color :#dacbb5;width:35%;height: 200px;margin: 0px 0px ;padding-left: 0px; float: left;">
+          <h3 class="quickaddp">Phone</h3><br>
+          <p class="quickaddp">01-5970012</p><br><br>
+          <h3 class="quickaddp">Follow Us</h3>
+          <!--creatig a table to divide each logos -->
+          <table style="float:left;margin-top:8px; padding-left:0px; text-align: right;" >
+            <tr>
+            <th>
+             <a href="https://www.instagram.com/islingtoncollege/">
+                  <img src="../images/instagram1.png" alt="instagram" width="50px" height="50px" style="padding: 10px;"  class="iconss">
+                </a>
+              
+            </th>
+    
+            <th>
+            
+              <a href="https://www.facebook.com/IslingtonCollege" >
+                <img src="../images/facebook1.png" alt="facebook" width="50px" height="50px" style="padding: 10px; border-radius: 100%;"  class="iconss">
+              </a>
+            </th>
+    
+            <th>
+            
+              <a href="https://www.youtube.com/user/islingtonnepal" >
+                <img src="../images/youtube1.png" alt="youtube" width="50px" height="50px" style="padding: 10px;border-radius: 100%;"  class="iconss">
+            </th>
+            <th>
+            
+              <a href="info@islington.edu.np " >
+                <img src="../images/mail1.png" alt="mail" width="50px" height="50px" style="padding: 10px; border-radius: 100%;"  class="iconss">
+            </th>
+          </tr>
+    
+        </table>
+        </div>
+        <!--creating div for the feedback section-->
+        <div style="background-color:#dacbb5;width:30%;height: 200px;margin: 0px 0px ;float: right;text-align: left;">
+          <h3 style="text-align: left; margin-left: 1em;padding-left: 1em;font-family: serif;color: #6c593d;" >Feedback</h3>
+          <!--creating form and calling the function on clicking-->
+          <form name="myForm"  onsubmit="validateForm()" >
+            Username:<br><input type="text" name="username"placeholder="Username" style="width: 150px;height: 30px;border-radius: 20px;"><br>
+            Message:<br> <textarea name="message" rows="5" cols="22" placeholder="   Message" style="width: 160px;height: 70px;border-radius: 20px;"></textarea><br>
+            <input type="submit" value="Submit" style="width: 60px;height:30px;background-color: #c4a580;color: white; border-radius: 20px;">
+            </form>
+          
+          
+          
+        </div>
+    
+        </div>
+          
+          
+          
+          
+         
+    
+        
+         
+          
+          <h3>
+           &copy; 2024  छाप / Terms of Sale /Privacy Policy
+         </h3>
+         <script src="../script.js"></script>
+     </footer>
+
+    
+    
+    </div>
+</body>
+</html>

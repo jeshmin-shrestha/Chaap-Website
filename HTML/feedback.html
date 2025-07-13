@@ -1,0 +1,34 @@
+<html>
+  <link rel="styleSheet" href="../style.css">
+<a href="login.html"> <img src="images/w (1).png" style="width: 100px; height: 100px; float: left;margin-left: 100px; " ></a></div>
+   <div style=" background-color: #c4a580; width: 500px; height: 500px;justify-content: center; margin-top: 200px; margin-left: 500px; padding:30px ; border-radius: 12px;">
+    <h1 style="text-align: center;">Sign Up</h1>
+    <form name="message" onsubmit="messageform()">
+    <p> First Name:<input type="text" name="firstname"></p>
+    <p> Last Name:<input type="text" name="lastname"></p>
+    <p> Gender:<input type="radio" name="gender" value="male" >Male
+        <input type="radio" name="gender" value="female" >Female</p><br>
+        <br>
+        <p >Messages:<br>
+        <textarea name="messages" rows="10" cols="30" placeholder="Messages"></textarea></p>
+
+    <p><input type="submit" value="Sign Up" style="text-decoration: none;"> </p>
+</div>
+    <script >
+    function messageform()
+{
+  var fname=document.forms["message"]["firstname"].value;
+  var lname=document.forms["message"]["lastname"].value;
+  var gender=document.forms["message"]["gender"].value;
+  var Messages=document.forms["message"]["messages"].value;
+  if(fname==""|| lname==""||gender==""){
+    alert("Empty fields found.Please fill the form.");
+  }
+  else{
+   alert("Thank you for signing up.");
+  }
+}
+</script>
+</form>
+</body>
+<html>

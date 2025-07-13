@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Homepage</title>
+   <meta name="description" content="Home page"/>
+   <meta name="viewpoint" content="width=device-width,initial-scale=1.0"/>
+   <!--linking external css-->
+   <link rel="stylesheet" href="../style.css">
+   <!--using internal css for applying style of this webpage only -->
+   <style>
+  /* styling for the whole webpage */
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+
+}
+/* style for the body */
+    .body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('images/marble\ __\ texture.jpg');
+  background-size: cover;
+  width: 100%;
+
+}
+/* Style of the entire h3 tag */
+.h3{
+  font-family:serif; text-align: left; margin: 10px;padding: 10px;
+
+color:#6c593d;
+
+
+
+}
+/* Style of the entire h4 tag */
+.h4
+{
+font-family:serif; 
+           text-align:left;;
+           
+            padding-left: 40px;
+           color: #6c593d;
+           position: relative;
+         font-size: 1em;
+        
+         font-weight: 400;
+        
+         text-decoration: none;
+         position: relative;
+font-size: 1em;
+color: #6c593d;
+font-weight: 400;
+margin-left: 40px;
+text-decoration: none;
+}
+/* style for the wrapper */
+.wrapper{
+  background: transparent; width: 99%;height:100%; border-radius: 20px;
+}
+ /* applying style for ourspeciality section */
+.ourspeciality{
+  width: 90%;height: 400px;background-color: #dbd8d0; padding-top: 50px; margin-top: 10px;margin-left: 90px;; box-shadow: 2px 2px 10px grey;
+}
+/* applying style for leading paragraphs*/
+.leadingparagraph{
+  font-size: large;margin:10px 0 0 100px ;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #7f8f6e;
+  color: white;
+  padding: 10px 20px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border-radius: 12px;
+}
+/* styling the container section of the each featured products */
+.flex-container {
+  display: flex;
+  background:transparent;
+  padding-top: 2em;
+  
+}
+
+
+.featuredproducts{
+  background-color:transparent;
+  width:90%;
+  height: 750px;
+padding: 1em;
+  align-items: center;
+  margin-top: 10px;
+ margin-left: 90px;
+  justify-content: center;
+}
+
+   </style>
+ </head>
+  <!---creating body for a website-->
+ <body class="body">
+    <!---creating a wrapper for the body-->
+    <div class="wrapper">
+     <!--creating a header-->
+      <header>
+        <!--creating logo and linking it to the homepage-->
+       <a href="../HTML/homepage.html"><img src="../images/logo__2_-removebg-preview (1).png" width="120px" style="margin-left:  6px; padding: 0px; border-radius: 24px; height: 85px;" alt="logo"></a>
+        <!--creating the navigation bar that links other webpages-->
+        <nav class="navigation">
+          <a href="../HTML/homepage.html">Home</a>
+          <a href="../HTML/product.html">Products</a>
+          <a href="../HTML/blog1.html">Blog</a>
+          <a href="../HTML/research.html">Research</a>
+          <a href="../HTML/aboutus.html">About Us</a>
+          <a href="../HTML/login.html"><img src="../images/cart icon.png" width="30px" height="30px" ></a>
+          <!--creating the login button to link onto login page-->
+          <button class="login"><a href="../HTML/login.html">Login</a></button>
+        </nav>
+      </header>
+      <!--closing header-->
+      <!--allocating the main content inside the wrapper-->
+      <!--using inline css style to apply on to this main tag only-->  
+      <main style="background: transparent;width:100% ;height:370vh;"> 
+      <!--creating headsliders-->
+       <div class="slider">
+        <!--creating divison for the images-->
+          <div id="image">
+            <!--inserting images for Image slider-->
+           <img src="../images/printermain.jpg"  width="100%" height="600px">
+          </div> 
+        </div>
+        <!--creating a divison for the our specialities/features-->
+        <div class="ourspeciality">
+          <!--using inline css to apply the style for this h1 tag only -->
+          <h1 style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">We Make It Happen</h1>
+          <!--creating a divison  to store the  main contents  inside  class"oursepciality"-->
+          <div class="flex-container">
+         <!-- creating another container/ division to insert images of each specialities inside flex-container -->
+            <div class="flexcontainer1">
+              <!--inserting images and applying styling through class circle-->
+              <img src="../images/technology.png" class="circle"> 
+              <!-- inserting detailed text to the images and applying styling through a class -->
+                 <p class="leadingparagraph">Leading Tech</p>
+            </div>
+            <!-- creating another container/ division to insert images of each specialities inside flex-container -->
+            <div class="flexcontainer1">
+               <!--inserting images and applying styling through class circle-->
+               <img src="../images/customerservice.png" class="circle"> 
+              <!-- inserting detailed text to the images and applying styling through a class -->
+              <p class="leadingparagraph">Exceptional Customer<br>Support</p>
+            </div>
+            <!-- creating another container/ division to insert images of each specialities inside flex-container -->
+            <div class="flexcontainer1"> 
+               <!--inserting images and applying styling through class circle-->
+               <img src="../images/best price.png" class="circle"> 
+              <!-- inserting detailed text to the images and applying styling through a class -->
+              <p class="leadingparagraph">Affordable<br> Excellence</p>
+            </div>  
+            <!-- creating another container/ division to insert images of each specialities inside flex-container -->
+            <div class="flexcontainer1">
+               <!--inserting images and applying styling through class circle-->
+               <img src="../images/review.png" class="circle">
+              <!-- inserting detailed text to the images and applying styling through a class -->
+              <p class="leadingparagraph">Reliable <br>Performance</p>
+            </div>
+            <!-- creating another container/ division to insert images of each specialities inside flex-container -->
+            <div class="flexcontainer1">
+               <!--inserting images and applying styling through class circle-->
+              <img src="../images/10+.png" class="circle">
+              <!-- inserting detailed text to the images and applying styling through a class -->
+              <p class="leadingparagraph">Industry Experience</p>
+            </div>
+          </div>
+        </div>
+        <!---creating a div for featured products--> 
+        <div class="featuredproducts" >
+          <!---applying in line css to style this specific heading -->
+          <h1 style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Featured Products</h1>
+          <!--creating a section to allocate the products into a section-->
+          <section>
+            <!--creating a div to store a separate for each products now-->
+           <div class="product">
+            <!--div for each pictures of printers-->
+            <picture>
+              <!--inerting images of the products -->
+              <img src="../images/printer1.1.jpg" alt="">
+            </picture>
+            <!--div to add details of the products-->
+            <div class="detail">
+              <!--inserting paragraph about the products-->
+              <p>
+               <b>EPson Inkjet printer</b><br>
+               <!--using small tag to write the details into a even more smaller font size than p-->
+               <small>New arrival</small>
+              </p>
+              <!--creating a span to allocate price of each printers -->
+              <span>Price:16,999</span>
+            </div>
+            <!--creating a div for a button section to store the links to cart and review stars-->
+              <div class="button">
+                <!---creating a div to organize the review stars and styling through class -->
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                 </p>
+                 <!--linking add to cart and calling the function through id add-to-cart-btn -->
+                 <a href id="add-to-cart-btn">Add to Cart</a>
+               </div>
+              </div>
+             <div class="product">
+               <!--div for each pictures of printers-->
+              <picture>
+                <!--inerting images of the products -->
+                <img src="../images/printer1.3.jpg" alt="">
+              </picture>
+              <!--div to add details of the products-->
+              <div class="detail">
+                <p>
+                  <b>Canon M100 Printer</b><br>
+                  <!--using small tag to write the details into a even more smaller font size than p-->
+                  <small>New arrival</small>
+                </p>
+                <!--creating a span to allocate price of each printers -->
+                <span>Price:17,999</span>
+              </div>
+              <!--creating a div for a button section to store the links to cart and review stars-->
+              <div class="button">
+                  <!---creating a div to organize the review stars and styling through class -->
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                 <!--linking add to cart and calling the function through id add-to-cart-btn -->
+                <a href id="add-to-cart-btn">Add to Cart</a>
+              </div>
+             </div>
+             <div class="product">
+               <!--div for each pictures of printers-->
+              <picture>
+                <!--inerting images of the products -->
+                <img src="../images/printer1.4.jpg" alt="">
+              </picture>
+              <!--div to add details of the products-->
+              <div class="detail">
+                <p>
+                  <b>Canon LBP 2900 Laser printer</b><br>
+                  <!--using small tag to write the details into a even more smaller font size than p-->
+                  <small>New arrival</small>
+                </p>
+                <!--creating a span to allocate price of each printers -->
+                <span>Price:13,000</span>
+              </div>
+              <!--creating a div for a button section to store the links to cart and review stars-->
+              <div class="button">
+                  <!---creating a div to organize the review stars and styling through class -->
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                 <!--linking add to cart and calling the function through id add-to-cart-btn -->
+                <a href id="add-to-cart-btn">Add to Cart</a>
+              </div>
+             </div>
+             <div class="product">
+               <!--div for each pictures of printers-->
+              <picture>
+                <!--inerting images of the products -->
+                <img src="../images/printer1.5.jpg" alt="">
+              </picture>
+              <!--div to add details of the products-->
+              <div class="detail">
+                <p>
+                  <b>HP Design Jet T-83 Large printer</b><br>
+                  <!--using small tag to write the details into a even more smaller font size than p-->
+                  <small>New arrival</small>
+                </p>
+                <!--creating a span to allocate price of each printers -->
+                <span>Price:45,000</span>
+              </div>
+              <!--creating a div for a button section to store the links to cart and review stars-->
+              <div class="button">
+                  <!---creating a div to organize the review stars and styling through class -->
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                 <!--linking add to cart and calling the function through id add-to-cart-btn -->
+                <a href id="add-to-cart-btn">Add to Cart</a>
+              </div>
+             </div>
+             <div class="product">
+               <!--div for each pictures of printers-->
+              <picture>
+                <!--inerting images of the products -->
+                <img src="../images/printer1.6.jpg" alt="">
+              </picture>
+              <!--div to add details of the products-->
+              <div class="detail">
+                <p>
+                  <b>Brother L2540DW Monochrome Laser printer</b><br>
+                  <!--using small tag to write the details into a even more smaller font size than p-->
+                  <small>New arrival</small>
+                </p>
+                <!--creating a span to allocate price of each printers -->
+                <span>Price:38,000</span>
+              </div>
+              <!--creating a div for a button section to store the links to cart and review stars-->
+              <div class="button">
+                <p class="star">
+                    <!---creating a div to organize the review stars and styling through class -->
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                 <!--linking add to cart and calling the function through id add-to-cart-btn -->
+                <a href id="add-to-cart-btn">Add to Cart</a>
+              </div>
+             </div>
+             <div class="product">
+               <!--div for each pictures of printers-->
+              <picture>
+                <!--inerting images of the products -->
+                <img src="../images/printer1.7.jpg" alt="">
+              </picture>
+              <!--div to add details of the products-->
+              <div class="detail">
+                <p>
+                  <b>Canon LBP6030W Wireless Laser printer</b><br>
+                  <!--using small tag to write the details into a even more smaller font size than p-->
+                  <small>New arrival</small>
+                </p>
+                <!--creating a span to allocate price of each printers -->
+                <span>Price:19,999</span>
+              </div>
+              <!--creating a div for a button section to store the links to cart and review stars-->
+              <div class="button">
+                  <!---creating a div to organize the review stars and styling through class -->
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                 <!--linking add to cart and calling the function through id add-to-cart-btn -->
+                <a href id="add-to-cart-btn">Add to Cart</a>
+              </div>
+             </div>
+           </section>
+           <!--linking the homepage to the product page to explore more products-->
+          <a href="product.html" style="text-decoration: none; color: white;">
+            <!--creating button for the linking to product page from homepage-->
+           <button style="width: 150px;height: 60px;margin-left: 600px;background-color: #c4a580;" ><p>Explore More Products</p</button>
+          </a>
+         </div>
+         <!--creating a div for why us section-->
+         <div class="whyus">
+          <!--creating a container to separate a sections of why us  into two parts -->
+          <div class="container">
+            <!--creating a left side of the container to store text on customer reviews-->
+            <div class="container__left">
+              <!--inserting the headline for why us -->
+              <h1 style="font-family: serif;font-size: 50px;">What our customers say</h1>
+              <p style="font-size: 20px;">
+                <!--inserting the deatils on paragraphs-->
+                Over 400 companies from diverse sectors consult us to enhance their
+                user experience of their products and services.
+              </p>
+              <p style="font-size: 20px;">
+                We have helped companies increase their customer base and generate
+                multifold revenue with our service.
+              </p><br><br><br><br><br>
+              <!--using <a> tag to link homepage to about us to read our success stories-->
+              <a href="../HTML/aboutus.html" style="color: #6c593d;"><p style="font-size: large;">Read our success stories</p></a> 
+            </div>
+            <!--creating the right side of the container section of why us-->
+            <div class="container__right">
+              <!--creating a card div to separate each reviews from each other (review of once customer)-->
+              <div class="card">
+                <!--inserting pictures of customers-->
+                <img src="../images/ppl2.jpg" alt="user" />
+               <!--creating another div inside the card to store the the detailed text-->
+                <div class="card__content">
+                  <!--creating body of the card content to write the customer reviews  -->
+                  <div class="card__details">
+                    <!--inserting the reviews into paragraphs-->
+                    <p>
+                      "We had a great time collaboraring with the Filament team. They
+                      have my high recommendation!"
+                    </p>
+                          <!--inserting reviwers' name -->
+                    <h4>- John Cena</h4>
+                  </div>
+                </div>
+              </div>
+               <!--creating a card div to separate each reviews from each other (review of once customer)-->
+              <div class="card">
+                 <!--inserting pictures of customers-->
+                <img src="../images/ppl1.jpg" alt="user" />
+                <!--creating another div inside the card to store the the detailed text-->
+                <div class="card__content">
+                <!--creating body of the card content to write the customer reviews  -->
+                  <div class="card__details">
+                     <!--inserting the reviews into paragraphs-->
+                    <p>
+                     "They always deliver products on time or even before. Their customer service is just great!!"
+                    </p>
+                          <!--inserting reviwers' name -->
+                    <h4>- Jeon Jungkook</h4>
+                  </div>
+                </div>
+              </div>
+              <!--creating a card div to separate each reviews from each other (review of once customer)-->
+              <div class="card">
+                <!--inserting pictures of customers-->
+                <img src="../images/ppl5.jpg" alt="user" />
+                <!--creating another div inside the card to store the the detailed text-->
+                <div class="card__content">
+             <!--creating body of the card content to write the customer reviews  -->
+                  <div class="card__details">
+                     <!--inserting the reviews into paragraphs-->
+                    <p>
+                     " I absolutely loved working with the Filament team. Complete
+                      experts at what they do!"
+                    </p>
+                    <!--inserting reviwers' name -->
+                    <h4>- Kim Jennie</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+         
+         
+          
+
+          
+          
+          
+            
+          
+     </main>
+       
+
+       
+      <!--creating footer-->
+       <footer class="footer" >
+        <!--creating a divison inside the footer to insert quick adds-->
+        <div style="background-color: #dacbb5;width:100%;height: 300px;">
+          <h2 style="font-family: serif;margin-left: 1em; padding: 1em; text-align: center;">Contact Us</h2>
+          <!--body of contact us-->
+          <!--left aligned address and email-->
+          <div style="background-color:#dacbb5;width:35%;height: 200px;margin: 10px 0px ;float: left;">
+          <h3 class="quickaddp"> Address</h3><br>
+          <p class="quickaddp">Kamal Marg, Kathmandu 44600 </p><br><br>
+          <h3 class="quickaddp"> Email</h3><br>
+          <p class="quickaddp">info@islingtoncollege.edu.np</p>
+
+          
+        </div>
+        <!--phone -->
+        <div style="background-color :#dacbb5;width:35%;height: 200px;margin: 10px 0px ;padding-left: 40px; float: left;">
+          <h3 class="quickaddp">Phone</h3><br>
+          <p class="quickaddp">01-5970012</p><br><br>
+          <h3 class="quickaddp">Follow Us</h3>
+          <!--creating a table to divide each logos -->
+          <table style="float:left;margin-top:8px; padding-left:1px; text-align: right;" >
+            <!--each row contains a table head-->
+            <tr>
+              <!--inserting logos-->
+            <th>
+              <!--linking  socialmedias through logos-->
+             <a href="https://www.instagram.com/islingtoncollege/">
+                  <img src="../images/instagram1.png" alt="instagram" width="50px" height="50px" style="padding: 10px;"  class="iconss">
+                </a>
+              
+            </th>
+   <!--inserting logos-->
+            <th>
+             <!--linking  socialmedias through logos-->
+              <a href="https://www.facebook.com/IslingtonCollege" >
+                <img src="../images/facebook1.png" alt="facebook" width="50px" height="50px" style="padding: 10px; border-radius: 100%;"  class="iconss">
+              </a>
+            </th>
+   <!--inserting logos-->
+            <th>
+             <!--linking  socialmedias through logos-->
+              <a href="https://www.youtube.com/user/islingtonnepal" >
+                <img src="../images/youtube1.png" alt="youtube" width="50px" height="50px" style="padding: 10px;border-radius: 100%;"  class="iconss">
+            </th>
+             <!--inserting logos-->
+            <th>
+             <!--linking  socialmedias through logos-->
+              <a href="info@islington.edu.np " >
+                <img src="../images/mail1.png" alt="mail" width="50px" height="50px" style="padding: 10px; border-radius: 100%;"  class="iconss">
+            </th>
+          </tr>
+  
+        </table>
+        </div>
+        <!--creating div for the feedback section-->
+        <div style="background-color:#dacbb5;width:30%;height: 200px;margin: 0px 0px ;float: right;text-align: left;">
+          <h3 style="text-align: left; margin-left: 1em;padding-left: 1em;font-family: serif;color: #6c593d;" >Feedback</h3>
+          <!--creating form and calling the function on clicking-->
+          <form name="myForm"  onsubmit="validateForm()" >
+            <!--inserting details of the form-->
+            Username:<br><input type="text" name="username"placeholder="Username" style="width: 150px;height: 30px;border-radius: 20px;"><br>
+            <!--adding text area for feedback-->
+            Message:<br> <textarea name="message" rows="5" cols="22" placeholder="   Message" style="width: 160px;height: 70px;border-radius: 20px;"></textarea><br>
+            <!--creating a submit button on clicking calls the "validateform()" function -->
+            <input type="submit" value="Submit" style="width: 60px;height:30px;background-color: #c4a580;color: white; border-radius: 20px;">
+            </form>
+          
+          
+          
+      </div>
+
+        </div>
+          
+          
+
+          
+          <div >
+         
+  
+         </div>
+         <!--linking javascript -->
+          <script>
+         
+          //to automatically slideshow  imageswithin 3 secs 
+          var images = [ 'printercannon.jpg','printer104.jpg','printer110.jpg','printer112.jpg', 'printer113.jpg','printermain.jpg'];
+          //initailizing the var to 0 
+          var x = 0;
+          //initializing img var extracting  id 
+          var imgs = document.getElementById('image');
+          setInterval(slider, 3000);
+          //creating a function to slide show the images one after another
+          function slider()
+           {
+            //when a picture is less than the length which is 6 it adds up a image 
+            if (x < images.length) 
+            {
+              //after the condition is met it adds 1 untill the condition is not fulfilled
+             x = x + 1;
+            } 
+ 
+            else 
+            //when if condition  is not fulfilled it excutes the else condition by subtracting by 1
+            {  
+                   
+             x = 1;
+            }
+            //since the length is 6 but the index is 5 it subtracts a length to show one image one after another extracting the pictures from the folder named "images"
+            imgs.innerHTML = "<img src=../images/" + images[x - 1] + ">";
+          }
+          </script>
+          <!--inserting copyright details-->
+          <h3>
+           &copy; 2024  छाप / Terms of Sale /Privacy Policy
+         </h3>
+         <script src="../script.js"></script>
+     </footer>
+    </div> 
+   
+    
+  </body>
+</html>
